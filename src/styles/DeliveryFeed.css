@@ -1,0 +1,20 @@
+/* Update the CSS for the DeliveryFeed component */
+.delivery-feed-list-container {
+  /* Your existing styles for the container */
+  
+  /* Center the store-feed-list */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.store-feed-list {
+  width: 90%;
+  /* Your existing styles for the store-feed-list */
+  transition: opacity 0.3s ease; /* Add a transition for opacity */
+  opacity: 1; /* Set the initial opacity to 1 */
+}
+
+.store-feed-list.updated {
+  opacity: 0; /* When the list is updated, set opacity to 0 */
+}

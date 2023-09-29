@@ -1,0 +1,11 @@
+/* BasicButton.css */
+
+button {
+    color: white;
+    border: none;
+    outline: none;
+    padding: 8px; /* Add padding to match the IconInput */
+    cursor: pointer;
+  }
+  
+  

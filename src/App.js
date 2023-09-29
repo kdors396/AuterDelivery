@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import FoodDelivery from './containers/FoodDelivery';
+import { AddressSelectionProvider } from './context/AddressSelectionContext';
+import { SearchProvider } from './context/SearchContext'; // Import the SearchProvider
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* Wrap your components with the context provider */}
+      <AddressSelectionProvider>
+        <SearchProvider>
+          <FoodDelivery />
+        </SearchProvider>
+      </AddressSelectionProvider>
     </div>
   );
 }

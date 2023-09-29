@@ -1,0 +1,9 @@
+/* FoodDelivery.css */
+
+.food-delivery-container {
+    background-image: url('../images/background.jpg'); /* Replace with the correct path to your background image */
+    background-size: cover; /* Adjust the background size as needed */
+    background-repeat: no-repeat; /* Prevent the background from repeating */
+    /* Other CSS styles for your container */
+  }
+  

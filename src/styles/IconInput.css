@@ -1,0 +1,87 @@
+/* IconInput.css */
+
+.icon-input {
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 0; /* Set border-radius to 0 */
+    padding: 8px;
+    background-color: white;
+  
+    /* Set a min-width for PC and tablet devices */
+    min-width: 500px; /* Adjust the value as needed */
+  
+    /* Use a media query to override min-width for mobile devices */
+    @media (max-width: 768px) {
+      min-width: 0; /* Remove min-width for mobile devices */
+      flex: 1; /* Allow it to take up all available space on mobile */
+    }
+  }
+  
+  .icon-input img {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  
+  .icon-input input {
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; /* Add this rule */
+  }
+  
+  /* Add animation to the bottom border of the icon-input-wrapper */
+  .icon-input-wrapper {
+    position: relative;
+  }
+  
+  .icon-input-wrapper::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: transparent; /* Initial transparent color */
+    transition: background-color 0.3s ease; /* Add animation transition */
+  }
+  
+  /* Change the bottom border color when input is focused */
+  .icon-input-wrapper:focus-within::before {
+    background-color: blue; /* Change to your desired border color */
+  }
+  
+  /* Style the autocomplete dropdown */
+.autocomplete-dropdown {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: none;
+  z-index: 1;
+
+  /* Set the width to match the input field */
+  width: 100%;
+  /* Adjust the top position to align the dropdown with the input field */
+  top: 100%;
+  
+  /* Adjust the left position to align the dropdown with the start of the input */
+  left: 0;
+  box-sizing: border-box; /* Add this rule */
+}
+
+  
+  .autocomplete-dropdown li {
+    padding: 8px;
+    cursor: pointer;
+  }
+  
+  .autocomplete-dropdown li:hover {
+    background-color: #f5f5f5;
+  }
+  

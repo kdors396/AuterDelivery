@@ -1,0 +1,59 @@
+/* DeliveryAddress.css */
+
+.delivery-address-container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    width: 90%; /* Take up 50% of the screen width */
+    margin: 0 auto; /* Center horizontally */
+    height: 100vh; /* Set height to 100% of viewport height */
+  }
+
+/* Set the width of the inner div to 100% */
+.delivery-address-content {
+    width: 100%;
+}
+
+.input-button-container {
+    display: flex;
+    /* Make the children flex items */
+    align-items: center;
+    /* Vertically center the children */
+
+    /* Use a media query to change the layout for mobile devices */
+    @media (max-width: 768px) {
+        flex-direction: column;
+        /* Stack the elements vertically */
+        align-items: stretch;
+        /* Stretch elements to full width */
+    }
+}
+
+.icon-input-wrapper {
+    margin-right: 10px;
+    /* Adjust the margin as needed */
+
+    /* Use a media query to make it full width on mobile screens */
+    @media (max-width: 768px) {
+        width: 100%;
+        margin-right: 0;
+        /* Remove margin on mobile screens */
+        margin-bottom: 10px;
+        /* Add margin between input and button */
+    }
+}
+
+.delivery-address-heading {
+    font-weight: 700;
+    /* Bold font weight */
+    font-size: 36px;
+    /* Font size of 36 pixels */
+    line-height: 44px;
+    /* Line height of 44 pixels */
+    margin-bottom: 24px;
+    /* Margin bottom of 24 pixels */
+    color: white; /* Set text color to white */
+}
+
+/* Add any additional styling for the IconInput and BasicButton components here */

@@ -1,0 +1,32 @@
+/* AddressSection.css */
+
+.address-section {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.deliver-now {
+    margin-right: 8px;
+}
+
+.address {
+    height: 26px;
+    display: flex;
+    align-items: center;
+    font-weight: 600; /* Add this line to make the address text bolder */
+}
+
+.dropdown-icon {
+    cursor: pointer;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+}
+
+.icon-input-container {
+    margin-top: 16px; /* Add spacing at the top */
+    margin-bottom: 16px; /* Add spacing at the bottom */
+  }
