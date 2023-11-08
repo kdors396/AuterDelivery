@@ -24,7 +24,21 @@ function AddressSection({ address }) {
         <a className="address" onClick={toggleModal}>
           {address}
           <span className="dropdown-icon">
-            {/* Your SVG code here */}
+            <svg
+              width="26"
+              height="26"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 7L8 11L12 7"
+                stroke="#000"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
           </span>
         </a>
         <div className="icon-input-container">

@@ -11,7 +11,7 @@ const dummySuggestions = [
   { streetAddress: '555 Pine Road', cityState: 'Chicago, IL' },
 ];
 
-function IconInput({ icon, placeholder, value, onChange, backgroundColor, dropdownEnabled = true }) {
+function IconInput({ icon, placeholder, value, onChange, backgroundColor, dropdownEnabled = true, suggestionsProp }) {
   const [showDropdown, setShowDropdown] = useState(false);
   const [suggestions, setSuggestions] = useState([]);
   const { selectedAddress, setAddress } = useAddressSelection();
@@ -23,7 +23,7 @@ function IconInput({ icon, placeholder, value, onChange, backgroundColor, dropdo
     if (inputValue.length < 1) {
       setShowDropdown(false);
     } else {
-      const filteredSuggestions = dummySuggestions.filter((suggestion) =>
+      const filteredSuggestions = suggestionsProp.filter((suggestion) =>
         `${suggestion.streetAddress}, ${suggestion.cityState}`
           .toLowerCase()
           .includes(inputValue.toLowerCase())

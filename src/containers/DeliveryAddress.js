@@ -15,6 +15,14 @@ function DeliveryAddress() {
     console.log('Address submitted:', address);
   };
 
+  const dummySuggestions = [
+    { streetAddress: '123 Fake Street', cityState: 'Coral Springs, FL' },
+    { streetAddress: '456 Elm Avenue', cityState: 'San Francisco, CA' },
+    { streetAddress: '789 Oak Street', cityState: 'New York, NY' },
+    { streetAddress: '101 Maple Lane', cityState: 'Los Angeles, CA' },
+    { streetAddress: '555 Pine Road', cityState: 'Chicago, IL' },
+  ];
+
   return (
     <div className="delivery-address-container">
       <div className="delivery-address-content">
@@ -26,6 +34,7 @@ function DeliveryAddress() {
               placeholder="Enter delivery address"
               value={address}
               onChange={handleAddressChange}
+              suggestionsProp={dummySuggestions}
             />
           </div>
           <BasicButton label="Get started" onClick={handleSubmit} color="black" />

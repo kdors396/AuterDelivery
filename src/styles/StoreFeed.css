@@ -1,20 +1,34 @@
 /* StoreFeed.css */
 
 .store-feed {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .store-image {
-    max-width: 100%;
-    height: 20vh;
-    object-fit: cover;
-    border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
-  
-  .store-name {
-    font-size: 1.4rem; /* Adjust font size as needed */
-    font-weight: 600; /* Make the store name text bold or customize style */
-    margin-top: 8px; /* Add margin to separate image and name */
-  }
-  
+
+.store-image {
+  max-width: 100%;
+  height: 20vh;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.store-name {
+  font-size: 1.4rem;
+  /* Adjust font size as needed */
+  font-weight: 600;
+  /* Make the store name text bold or customize style */
+  margin-top: 8px;
+  /* Add margin to separate image and name */
+}
+
+a {
+  text-decoration: none;
+  /* Remove the underline style */
+  color: inherit;
+  /* Inherit the color from the parent (default text color) */
+}
+
+a:hover {
+  text-decoration: none;
+  /* Remove underline on hover */
+}

@@ -1,0 +1,44 @@
+/* StoreDetails.css */
+
+.store-details-container {
+    width: 90%;
+    margin: 0 auto;
+}
+  
+.category-list {
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+    overflow-x: scroll; /* Enable horizontal scrolling */
+    width: 100%;
+    white-space: nowrap; /* Prevent items from wrapping to the next line */
+    scroll-behavior: smooth; /* Enable smooth scrolling on drag */
+}
+  
+.category-item {
+    font-size: 20px; /* Increased font size */
+    padding: 10px;
+    /* You can set a width for the items if needed */
+}
+
+/* Hide the scrollbar */
+.category-list::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    display: none;
+}
+  
+h1, p, h2 {
+    width: 100%;
+    /* Add additional styling as needed */
+}
+
+.cart-button-container {
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff; /* Ensuring it appears above any other background content */
+}

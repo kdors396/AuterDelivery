@@ -1,0 +1,159 @@
+{
+    "id": 1,
+    "name": "Mcdonalds",
+    "imageUrl": "../images/store1.jpg",
+    "menu": [
+        {
+            "name": "McCrispy",
+            "description": "",
+            "imageLink": null,
+            "price": 5.19,
+            "category": "Sandwiches",
+            "customizations": [
+                {
+                    "Comes with": {
+                        "type": "dropdown",
+                        "options": {
+                            "Butter": [
+                                {
+                                    "option": "None",
+                                    "price": 0
+                                },
+                                {
+                                    "option": "Regular",
+                                    "price": 0,
+                                    "default": true
+                                },
+                                {
+                                    "option": "Extra",
+                                    "price": 0
+                                }
+                            ],
+                            "Crinkle Cut Pickle": [
+                                {
+                                    "option": "None",
+                                    "price": 0
+                                },
+                                {
+                                    "option": "Regular",
+                                    "price": 0,
+                                    "default": true
+                                },
+                                {
+                                    "option": "Extra",
+                                    "price": 0
+                                }
+                            ],
+                            "McCrispy Filet": [
+                                {
+                                    "option": "None",
+                                    "price": 0
+                                },
+                                {
+                                    "option": "Regular",
+                                    "price": 0,
+                                    "default": true
+                                },
+                                {
+                                    "option": "Extra",
+                                    "price": 2.49
+                                }
+                            ],
+                            "Potato Roll": [
+                                {
+                                  "option": "0",
+                                  "price": 0
+                                },
+                                {
+                                  "option": "1",
+                                  "price": 0,
+                                  "default": true
+                                }
+                              ]
+                        }
+                    },
+                    "Add on": {
+                        "type": "dropdown",
+                        "options": {
+                          "American Cheese": [
+                            {
+                              "option": "None",
+                              "price": 0,
+                              "default": true
+                            },
+                            {
+                              "option": "Regular",
+                              "price": 0.50
+                            },
+                            {
+                              "option": "Extra",
+                              "price": 1.00
+                            }
+                          ],
+                          "3 Half Strips Bacon": [
+                            {
+                              "option": "None",
+                              "price": 0,
+                              "default": true
+                            },
+                            {
+                              "option": "Regular",
+                              "price": 1.79
+                            },
+                            {
+                              "option": "Extra",
+                              "price": 3.58
+                            }
+                          ],
+                          "Mustard": [
+                            {
+                              "option": "None",
+                              "price": 0,
+                              "default": true
+                            },
+                            {
+                              "option": "Regular",
+                              "price": 0
+                            },
+                            {
+                              "option": "Extra",
+                              "price": 0
+                            }
+                          ],
+                          "Ketchup": [
+                            {
+                              "option": "None",
+                              "price": 0,
+                              "default": true
+                            },
+                            {
+                              "option": "Regular",
+                              "price": 0
+                            },
+                            {
+                              "option": "Extra",
+                              "price": 0
+                            }
+                          ],
+                          "Mayonnaise": [
+                            {
+                              "option": "None",
+                              "price": 0,
+                              "default": true
+                            },
+                            {
+                              "option": "Regular",
+                              "price": 0
+                            },
+                            {
+                              "option": "Extra",
+                              "price": 0
+                            }
+                          ]
+                        }
+                      }
+                }
+            ]
+        }
+    ]
+}

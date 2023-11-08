@@ -1,0 +1,23 @@
+/* MenuItem.css */
+.menu-item {
+    padding: 15px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu-item .item-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-item .item-price {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Add a subtle hover effect */
+}

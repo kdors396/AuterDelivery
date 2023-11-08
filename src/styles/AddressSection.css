@@ -1,7 +1,8 @@
 /* AddressSection.css */
 
 .address-section {
-    margin-top: 16px;
+    width: 90%;            /* Set width to 90% */
+    margin: 16px auto 0;   /* Center horizontally with auto margins and set top margin */
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -15,7 +16,7 @@
     height: 26px;
     display: flex;
     align-items: center;
-    font-weight: 600; /* Add this line to make the address text bolder */
+    font-weight: 600;      /* Make the address text bolder */
 }
 
 .dropdown-icon {
@@ -27,6 +28,6 @@
 }
 
 .icon-input-container {
-    margin-top: 16px; /* Add spacing at the top */
-    margin-bottom: 16px; /* Add spacing at the bottom */
-  }
+    margin-top: 16px;      /* Add spacing at the top */
+    margin-bottom: 16px;   /* Add spacing at the bottom */
+}

@@ -1,44 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import AddressSection from '../components/AddressSection';
 import StoreFeed from '../components/StoreFeed';
-import store1 from '../images/store1.jpg';
 import '../styles/DeliveryFeed.css';
 import { useSearch } from '../context/SearchContext';
+import mcdonalds from '../assets/mcdonalds.json';
 
-const storeData = [
-  {
-    id: 1,
-    name: "Store 1",
-    imageUrl: store1,
-  },
-  {
-    id: 2,
-    name: "Store 2",
-    imageUrl: store1,
-  },
-  {
-    id: 3,
-    name: "Mcdonalds",
-    imageUrl: store1,
-  },
-  {
-    id: 4,
-    name: "Popeyes",
-    imageUrl: store1,
-  },
-  {
-    id: 5,
-    name: "Burger King",
-    imageUrl: store1,
-  },
-  {
-    id: 6,
-    name: "Denny's",
-    imageUrl: store1,
-  },
-  // Add more store data as needed
-];
-
+const storeData = [mcdonalds]
 function DeliveryFeed({ selectedAddress }) {
   const { searchInput } = useSearch();
   const [filteredStoreData, setFilteredStoreData] = useState([]);
@@ -74,7 +41,7 @@ function DeliveryFeed({ selectedAddress }) {
             <p className="no-results-message">No results found.</p> // Styled message
           ) : (
             filteredStoreData.map((store) => (
-              <StoreFeed key={store.id} storeName={store.name} storeImage={store.imageUrl} />
+              <StoreFeed key={store.id} store={store} />
             ))
           )}
         </div>

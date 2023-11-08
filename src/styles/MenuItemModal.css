@@ -1,0 +1,153 @@
+.menu-item-modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.close-button {
+    font-size: 36px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.modal-label {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.modal-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+    width: 90%;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    padding: 5px 10px;
+    width: fit-content;
+}
+
+.quantity-control button {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 0 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+.quantity-control span {
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+.modal-footer {
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.customization-dropdown {
+    margin: 20px 0;
+}
+
+.customization-dropdown h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 0;
+
+    background-color: #f2f2f2;  /* Adds a light background color to the entire option section */
+    padding: 10px;              /* Adds some internal spacing */
+    border-radius: 5px;         /* Rounds the edges */
+    margin-bottom: 10px;        /* Space between different options */
+}
+
+.option label {
+    font-weight: 600; /* Increasing font-weight for thicker text */
+}
+
+.option > label {
+    font-weight: 600;  /* Makes the option name (like "Butter") bold */
+    margin-bottom: 5px;  /* Spacing between option name and its choices */
+    display: block;  /* Takes the full width */
+}
+
+.custom-option {
+    display: flex;
+    align-items: center;
+  }
+
+  .custom-option input[type="radio"] {
+    appearance: none;
+    outline: none;
+    width: 16px;
+    height: 16px;
+    border: 1px solid black;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 2px; /* Small top margin to better align with text */
+    vertical-align: middle;
+  }
+
+.custom-option input[type="radio"]:checked {
+    background: black;
+}
+
+.custom-option input[type="radio"]:before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: white;
+    visibility: hidden;
+  }
+
+  .custom-option input[type="radio"]:checked:before {
+    visibility: visible;
+  }
+
+.custom-label {
+    display: flex;
+    flex-direction: column;
+}

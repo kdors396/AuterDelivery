@@ -1,0 +1,14 @@
+/* Category.css */
+
+.category-item {
+    font-size: 18px; /* Adjust the font size to your preference */
+    padding: 10px; /* Add padding to all sides */
+    border-bottom: 5px solid transparent; /* Set a 5px thick transparent bottom border */
+    /* Add any other styles you need */
+  }
+  
+  .category-item.selected {
+    border-bottom: 5px solid black; /* Set a 5px thick black bottom border for the selected category */
+    /* Add any other styles for the selected category */
+  }
+  

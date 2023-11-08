@@ -33,8 +33,11 @@ function AddressChangeModal({ isOpen, onClose }) {
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              {/* Close button SVG */}
-            </svg>
+              <path
+                d="M5 5 L15 15 M15 5 L5 15"
+                stroke="black"
+                strokeWidth="2"
+              />            </svg>
           </span>
           <h3 className="modal-label">Deliver to</h3>
         </div>
